@@ -15,8 +15,14 @@ body {
 }
 
 #footer {
+    width: 98%;
     position: fixed;
     bottom: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 }
 
 
@@ -78,10 +84,9 @@ body {
 }
 
 .contents {
-    font-size: 2em;
-    width: 40vw;
+    flex-grow: 1;
 }
 
 .send {
-    font-size: 2em;
+    width: 100px;
 }
