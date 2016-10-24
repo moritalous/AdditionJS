@@ -1,0 +1,87 @@
+html,
+body {
+    height: 98%;
+    width: 98%;
+}
+
+#wrap {
+    width: 100%;
+    position: relative;
+    height: auto !important;
+    /*IE6対策*/
+    height: 100%;
+    /*IE6対策*/
+    min-height: 100%;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* talk */
+
+.talk {
+    padding: 50px 5%;
+}
+
+.talk:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.talk .left,
+.talk .right {
+    clear: both;
+    position: relative;
+    max-width: 80%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+.talk .left:before,
+.talk .right:before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-top: 2px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.talk .left {
+    float: left;
+    background-color: WhiteSmoke;
+}
+
+.talk .left:before {
+    border-right: 10px solid WhiteSmoke;
+    left: -14px;
+}
+
+.talk .right {
+    float: right;
+    background-color: GreenYellow;
+}
+
+.talk .right:before {
+    border-left: 10px solid GreenYellow;
+    right: -14px;
+}
+
+.contents {
+    font-size: 2em;
+    width: 40vw;
+}
+
+.send {
+    font-size: 2em;
+}
