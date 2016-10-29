@@ -74,8 +74,8 @@ function question(message) {
 // }
 
 function nextQuestion() {
-  aaa = Math.floor(Math.random() * 21);
-  bbb = Math.floor(Math.random() * 11);
+  aaa = Math.floor(Math.random() * 20);
+  bbb = Math.floor(Math.random() * (20 - aaa));
   ccc = aaa + bbb;
   q1++;
 }
